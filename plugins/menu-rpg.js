@@ -1,15 +1,3 @@
-/*
- * Jangan Di Hapus!!
- * 
- * Creator @KingOfBear
- *
- * Youtubeku: https://youtu.be/pwLZpdfO8AU
- * 
- * Ingin tambah fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6288279268363
- * 
- */
- 
 import fetch from 'node-fetch'
 import fs from 'fs'
 import moment from 'moment-timezone'

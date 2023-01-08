@@ -201,9 +201,9 @@ contextInfo: { externalAdReply :{ showAdAttribution: true,
                       }}
 })
   }
-handler.help = ['menu', '?', 'help']
+handler.help = ['menuu', '?', 'help']
 handler.tags = ['main']
-handler.command = /^(menu|\?|help)$/i
+handler.command = /^(menuu|\?|help)$/i
 
 handler.fail = null
 

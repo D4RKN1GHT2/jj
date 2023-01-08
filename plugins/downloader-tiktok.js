@@ -9,7 +9,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
         .catch(async _ => await tiktokdlv3(args[0]))
     const url = video.no_watermark2 || video.no_watermark || 'https://tikcdn.net' + video.no_watermark_raw || video.no_watermark_hd
     if (!url) throw 'Can\'t download video!'
-    conn.sendHydrated(m.chat, `${htki} ᴛɪᴋᴛᴏᴋ ᴡᴍ ${htka}`, `➔ ɴɪᴄᴋɴᴀᴍᴇ ${nickname}${description ? `\n➔ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:\n${description}` : ''}`, await (await fetch(url)).buffer(),
+    conn.sendHydrated(m.chat, `${htki} TIKTOK NO WM ${htka}`, `➔ ɴɪᴄᴋɴᴀᴍᴇ ${nickname}${description ? `\n➔ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:\n${description}` : ''}`, await (await fetch(url)).buffer(),
         url, '🌎 s ᴏ ᴜ ʀ ᴄ ᴇ', null, null, [
         ['ᴅᴏɴᴀꜱɪ', `.donasi`],
         ['ᴀᴜᴅɪᴏ', `.tiktokaudio ${args}`],
@@ -17,6 +17,6 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
 }
 handler.help = ['tiktok', 'tt', 'tiktok','tiktokdl'].map(v => v + ' <url>')
 handler.tags = ['downloader']
-handler.command = /^(tik(tok)?(tok)?(dl)?)$/i
+handler.command = /^(tiktok|tt)$/i
 
 export default handler

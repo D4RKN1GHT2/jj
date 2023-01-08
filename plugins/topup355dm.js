@@ -30,7 +30,7 @@ let handler = async(m, { conn, usedPrefix, command, text }) => {
 
 _*Note:*_
 _Silahkan Scan Barcode Di Atas, Batas Waktu 300 Detik Jika Lewat Atau Telat Di Anggap Hangus_`
-conn.sendHydrated(m.chat, `*「 TOPUP OTOMATIS 」*\n\n${kimakkk}`, `Powered By @${owned.split("@")[0]}`, babi, `${babi2}`, '🌎 U R L', null, null, [[null,null],[null,null],[null,null]], m)
+conn.sendHydrated(m.chat, `*「 TOPUP OTOMATIS 」*\n\n${kimakkk}`, `Powered By @${owned.split("@")[0]}`,  `https://docs.apigames.id/img/logo.svg`, '🌎 U R L', null, null, [null,null], m)
 }
 handler.help = ['topup355dm']
 handler.tags = ['internet']

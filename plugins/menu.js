@@ -1,15 +1,3 @@
-/*
- * Jangan Di Hapus!!
- * 
- * Creator @KingOfBear
- *
- * Youtubeku: https://youtu.be/pwLZpdfO8AU
- * 
- * Ingin tambah fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6288279268363
- * 
- */
-
 import fetch from 'node-fetch'
 import { promises } from 'fs'
 import { join } from 'path'
@@ -272,4 +260,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-                                        }
+}

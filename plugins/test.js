@@ -1,15 +1,3 @@
-/*
- * Jangan Di Hapus!!
- * 
- * Creator @KingOfBear
- *
- * Youtubeku: https://youtu.be/pwLZpdfO8AU
- * 
- * Ingin tambah fitur tapi tidak bisa coding?
- * hubungi: https://wa.me/6288279268363
- * 
- */
-
 import fetch from 'node-fetch'
 import { promises } from 'fs'
 import { join } from 'path'
@@ -181,13 +169,12 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-  let pp = await conn.profilePictureUrl(who).catch(_ => './src/avatar_contact.png')
+    const pp = await conn.profilePictureUrl(conn.user.jid).catch(_ => './src/avatar_contact.png')
     const menu = './media/menu.jpg'
     const valor = './thumbnail.jpg'
     let url = 'https://i.ibb.co/jfZVKmC/babi2.jpg'
     let flaa = pickRandom(global.flaaaaa)
-    const ultah = new Date(`${ultahowner} 00:00:01`)
+    const ultah = new Date('November 4 2022 00:00:01')
     const sekarat = new Date().getTime() 
     const Kurang = ultah - sekarat
     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
@@ -196,18 +183,18 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
     const detek = Math.floor( Kurang % (1000 * 60) / 1000)
     conn.sendButton(m.chat,
 `${wish()} ${name}
-`, text.trim(), thumb, [
+`, text.trim(), `${flaa}All Menu`, [
       [`ꜱᴇᴡᴀʙᴏᴛ`, `${usedPrefix}sewa`],
       [`۪۪ᴀᴜᴛʜᴏʀ ʙᴏᴛ`, `${usedPrefix}owner`]
     ], m, {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        mediaUrl: '',
+                        sourceUrl: 'https://www.instagram.com/muqsith_0109/',
                         mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ JAVAN SHOP ID`,
                         title: `💌 My Ultah: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
-                        thumbnail: await (await fetch(pp)).buffer(),
-                        sourceUrl: 'https://youtu.be/hklv-Ysqqac'
+                        body: `⚘ by JAVAN SHOP ID`,          previewType: 0,
+                        thumbnail: await (await fetch(thumb)).buffer(),
+                        mediaUrl: 'https://www.instagram.com/muqsith_0109/'
                         
                       }}
 })
@@ -220,10 +207,10 @@ contextInfo: { externalAdReply :{ showAdAttribution: true,
 type: 'audioMessage',
 ptt: true })
 }
-handler.help = ['allmenu']
-handler.tags = ['info']
+handler.help = ['menu']
+handler.tags = ['info', 'main']
 
-handler.command = /^(allmenu)$/i
+handler.command = /^(menu)$/i
 
 handler.limit = false
 handler.register = true
