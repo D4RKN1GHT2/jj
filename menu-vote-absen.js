@@ -50,18 +50,18 @@ const time = moment.tz('Asia/Jakarta').format('HH')
  await conn.sendButton(m.chat, `${wish()} ${name}`,runnya + '\n\n' + wm + '\n\n' + botdate, thumb, [['🧑OWNER','.owner']], m, {
   'document':{'url':'https://youtu.be/hklv-Ysqqac'},
 'mimetype':global.dpdf,
-'fileName':'Javan Shop Id',
+'fileName':'「 ᴹᴿ᭄ King Of Bear ×፝֟͜× 」',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'previewType':'pdf',
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://www.instagram.com/muqsith_0109/',
+                        sourceUrl: 'https://youtu.be/hklv-Ysqqac',
                         mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ JAVAN SHOP ID`,
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
                         title: `💌 My Ultah: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `⚘ by JAVAN SHOP ID`,          previewType: 0,
+                        body: `⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
                         thumbnail: await (await fetch(thumb)).buffer(),
-                        mediaUrl: 'https://www.instagram.com/muqsith_0109/'
+                        mediaUrl: 'https://youtu.be/hklv-Ysqqac'
                         
                       }}
 })

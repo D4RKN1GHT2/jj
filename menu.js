@@ -203,11 +203,11 @@ let handler = async (m, { conn, usedPrefix, __dirname }) => {
 contextInfo: { externalAdReply :{ showAdAttribution: true,
                         mediaUrl: '',
                         mediaType: 2,
-                        description: `Javan  Shop Id`,
+                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
                         title: `💌 My Ultah: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `Javan Shop Id`,          previewType: 0,
+                        body: `⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
                         thumbnail: await (await fetch(pp)).buffer(),
-                        sourceUrl: 'https://www.instagram.com/muqsith_0109/'
+                        sourceUrl: 'https://youtu.be/hklv-Ysqqac'
                         
                       }}
 })
@@ -272,4 +272,4 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
-                                        }
+}

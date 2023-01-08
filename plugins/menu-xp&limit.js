@@ -56,20 +56,20 @@ const time = moment.tz('Asia/Jakarta').format('HH')
     }
     let muptime = clockString(_muptime)
  await conn.sendButton(m.chat, `${wish()} ${name}`,runnya + '\n\n' + wm + '\n\n' + botdate, thumb, [['🧑OWNER','.owner']], m, {
-  'document':{'url':'https://youtu.be/hklv-Ysqqac'},
+  'document':{'url':'https://telegra.ph/file/68f4e1e2e96046de6145b.jpg'},
 'mimetype':global.dpdf,
-'fileName':'「 ᴹᴿ᭄ King Of Bear ×፝֟͜× 」',
+'fileName':'JAVAN SHOP ID',
 'fileLength':fsizedoc,
 'pageCount':fpagedoc,
 'previewType':'pdf',
 contextInfo: { externalAdReply :{ showAdAttribution: true,
-                        sourceUrl: 'https://youtu.be/hklv-Ysqqac',
+                        sourceUrl: 'https://telegra.ph/file/68f4e1e2e96046de6145b.jpg',
                         mediaType: 2,
-                        description: `⚘ ᴄʀᴇᴀᴛᴇ ᴹᴿ᭄ King Of Bear ×፝֟͜×`,
+                        description: `Javan Shop Id`,
                         title: `💌 My Ultah: ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`,
-                        body: `⚘ by ᴹᴿ᭄ King Of Bear ×፝֟͜×`,          previewType: 0,
+                        body: `⚘ by Sith`,          previewType: 0,
                         thumbnail: await (await fetch(thumb)).buffer(),
-                        mediaUrl: 'https://youtu.be/hklv-Ysqqac'
+                        mediaUrl: 'https://telegra.ph/file/68f4e1e2e96046de6145b.jpg'
                         
                       }}
 })
